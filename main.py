@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
     glogger.info('Training')
     trainer = Trainer(model=model, db=db, epochs=1)
-    trainer.run()
+    # trainer.run()
     glogger.info(trainer.metrics)
 
     glogger.info('Pruning')
