@@ -1,5 +1,5 @@
 <h1 align=center> KayPruning </h1>
-<h2 align=center> Making Neural Networks smaller and Faster!</h2>
+<h2 align=center> Making Neural Networks smaller and faster!</h2>
 
 
 ### Getting started
@@ -26,7 +26,7 @@ model = get_model('BaseModel')
 
 glogger.info('Training')
 trainer = Trainer(model=model, db=db, epochs=1)
-# trainer.run()
+trainer.run()
 glogger.info(trainer.metrics)
 
 glogger.info('Pruning')
