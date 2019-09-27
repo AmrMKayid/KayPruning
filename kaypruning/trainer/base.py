@@ -124,7 +124,7 @@ class Trainer:
                 self.prune(prune_type, percentage_k)
                 self.test_prune()
                 self.update_metrics(prune=True, prune_type=prune_type)
-            self.reset()
+                self.reset()
 
     def metrics_list(self):
         self.metrics = DotDict({
